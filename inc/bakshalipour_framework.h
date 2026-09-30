@@ -2,6 +2,7 @@
 #define BAKSHALIPOUR_FRAMEWORK
 
 #include <vector>
+#include <cstdint>
 #include <string>
 #include <iomanip>
 #include <vector>

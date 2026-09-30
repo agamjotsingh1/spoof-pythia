@@ -1,6 +1,8 @@
 #ifndef SPP_DEV2_HELPER_H
 #define SPP_DEV2_HELPER_H
 
+#include <cstdint>
+
 //namespace spp{
 
 // SPP functional knobs
@@ -46,7 +48,7 @@
 
 // Global register parameters
 #define GLOBAL_COUNTER_BIT 10
-#define GLOBAL_COUNTER_MAX ((1 << GLOBAL_COUNTER_BIT) - 1) 
+#define GLOBAL_COUNTER_MAX ((1 << GLOBAL_COUNTER_BIT) - 1)
 #define MAX_GHR_ENTRY 8
 
 /* Aux functions and structures */
@@ -152,4 +154,3 @@ class PREFETCH_FILTER {
 //}
 
 #endif /* SPP_DEV2_HELPER_H */
-

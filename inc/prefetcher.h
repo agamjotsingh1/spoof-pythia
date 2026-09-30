@@ -2,6 +2,7 @@
 #define PREFETCHER_H
 
 #include <string>
+#include <cstdint>
 #include <vector>
 
 class Prefetcher

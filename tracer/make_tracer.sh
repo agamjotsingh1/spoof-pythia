@@ -1,3 +1,7 @@
-export PIN_ROOT=/mnt/panzer/rahbera/softwares/pin-3.11-97998-g7ecce2dac-gcc-linux
+if [[ -z "$SPOOF_ENV" ]]; then
+    echo "Env variables not set. Source set_env.sh before running this script!" >&2
+    exit 1
+fi
+
 mkdir -p obj-intel64
 make obj-intel64/champsim_tracer.so

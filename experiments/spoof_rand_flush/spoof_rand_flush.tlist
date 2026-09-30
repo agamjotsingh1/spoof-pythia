@@ -1,0 +1,7 @@
+NAME=bwaves_spoof
+TRACE=$(PYTHIA_HOME)/traces/603.bwaves_s-891B.champsimtrace.xz $(PYTHIA_HOME)/traces/spoof_rand_flush.champsimtrace.xz
+KNOBS=
+
+NAME=bwaves_idle
+TRACE=$(PYTHIA_HOME)/traces/603.bwaves_s-891B.champsimtrace.xz $(PYTHIA_HOME)/traces/spoof_idle.champsimtrace.xz
+KNOBS=

@@ -1,0 +1,5 @@
+Trace,Exp,Core_0_IPC,Core_1_IPC,Filter
+bwaves_spoof,nopref,0.27109,0.29018,1
+bwaves_spoof,pythia,0.72196,0.14856,1
+bwaves_idle,nopref,0.33237,0.49421,1
+bwaves_idle,pythia,1.02095,0.49421,1
