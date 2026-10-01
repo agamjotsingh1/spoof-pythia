@@ -1,0 +1,7 @@
+NAME=gemsfdtd_spoof
+TRACE=$(PYTHIA_HOME)/traces/spoof_hotset_measure.champsimtrace.xz $(PYTHIA_HOME)/traces/459.GemsFDTD-765B.champsimtrace.xz
+KNOBS=
+
+NAME=bwaves_spoof
+TRACE=$(PYTHIA_HOME)/traces/spoof_hotset_measure.champsimtrace.xz $(PYTHIA_HOME)/traces/603.bwaves_s-891B.champsimtrace.xz
+KNOBS=
