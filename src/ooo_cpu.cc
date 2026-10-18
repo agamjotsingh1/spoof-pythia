@@ -1961,28 +1961,28 @@ void O3_CPU::retire_rob()
             }
         }
 
-        uint64_t retiring_ip = ROB.entry[ROB.head].ip;
+        // uint64_t retiring_ip = ROB.entry[ROB.head].ip;
 
-        if (retiring_ip == SPOOF_PROBE_START_IP) {
-            // read memory address accessed by set_marker_buffer[set]
-            uint64_t accessed_addr = ROB.entry[ROB.head].source_memory[0];
+        // if (retiring_ip == SPOOF_PROBE_START_IP) {
+        //     // read memory address accessed by set_marker_buffer[set]
+        //     uint64_t accessed_addr = ROB.entry[ROB.head].source_memory[0];
 
-            // extract set ID using 2MB alignment offset (bits 0-20)
-            spoof_current_set = (accessed_addr & 0x1FFFFF) / sizeof(uint64_t);
-            spoof_probe_start_cycle = current_core_cycle[cpu];
-            in_spoof_probe = true;
-        }
-        else if (retiring_ip == SPOOF_PROBE_END_IP) {
-            if (in_spoof_probe) {
-                uint64_t probe_latency = current_core_cycle[cpu] - spoof_probe_start_cycle;
+        //     // extract set ID using 2MB alignment offset (bits 0-20)
+        //     spoof_current_set = (accessed_addr & 0x1FFFFF) / sizeof(uint64_t);
+        //     spoof_probe_start_cycle = current_core_cycle[cpu];
+        //     in_spoof_probe = true;
+        // }
+        // else if (retiring_ip == SPOOF_PROBE_END_IP) {
+        //     if (in_spoof_probe) {
+        //         uint64_t probe_latency = current_core_cycle[cpu] - spoof_probe_start_cycle;
 
-                cout << "[SPOOF_PROBE] CPU: " << cpu
-                        << " Set: " << spoof_current_set
-                        << " Latency: " << probe_latency << endl;
+        //         cout << "[SPOOF_PROBE] CPU: " << cpu
+        //                 << " Set: " << spoof_current_set
+        //                 << " Latency: " << probe_latency << endl;
 
-                in_spoof_probe = false;
-            }
-        }
+        //         in_spoof_probe = false;
+        //     }
+        // }
 
         // release ROB entry
         DP ( if (warmup_complete[cpu]) {

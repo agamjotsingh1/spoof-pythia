@@ -354,6 +354,7 @@ uint64_t rotr64 (uint64_t n, unsigned int c)
 RANDOM champsim_rand(champsim_seed);
 uint64_t va_to_pa(uint32_t cpu, uint64_t instr_id, uint64_t va, uint64_t unique_vpage)
 {
+    return va;
 #ifdef SANITY_CHECK
     if (va == 0)
         assert(0);
