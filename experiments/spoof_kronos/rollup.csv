@@ -1,0 +1,5 @@
+Trace,Exp,Core_0_IPC,Core_1_IPC,Filter
+libquantum_spoof,nopref,0.23194,0.87898,1
+libquantum_spoof,pythia,0.477,0.87897,1
+libquantum_idle,nopref,0.28383,0.49421,1
+libquantum_idle,pythia,0.51282,0.49421,1

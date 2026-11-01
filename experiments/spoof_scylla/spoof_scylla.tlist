@@ -1,0 +1,7 @@
+NAME=libquantum_spoof
+TRACE=$(PYTHIA_HOME)/traces/462.libquantum-1343B.champsimtrace.xz $(PYTHIA_HOME)/traces/spoof_scylla.champsimtrace.xz
+KNOBS=
+
+NAME=libquantum_idle
+TRACE=$(PYTHIA_HOME)/traces/462.libquantum-1343B.champsimtrace.xz $(PYTHIA_HOME)/traces/spoof_idle.champsimtrace.xz
+KNOBS=
