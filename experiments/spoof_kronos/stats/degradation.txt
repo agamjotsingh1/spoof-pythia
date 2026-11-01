@@ -1,0 +1,7 @@
+Experiment: spoof_kronos, Degradation: IPC_Idle/IPC_Spoof
+-------------------------------------------------------
+Trace: bwaves                         Degradation: 57.94%
+Trace: gems                           Degradation: 46.93%
+Trace: libquantum                     Degradation: 64.15%
+Trace: mcf                            Degradation: 61.01%
+Trace: sphinx                         Degradation: 50.53%
